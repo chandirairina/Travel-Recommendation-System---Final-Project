@@ -166,9 +166,9 @@
 									<form method="POST" action="http://127.0.0.1:5000/recommendation">
 										<label for="destination">Choose your favorite place :</label>
 								
-											<select name="destination" id="destination" onkeyup="filterFunction()">
+											<select name="destination" id="destination">
 												{% for drop in drop_places %}  
-													<option value={{drop}}>{{drop}}</option>
+													<option value="{{drop}}">{{drop}}</option>
 												{% endfor %}
 											</select>
 								
