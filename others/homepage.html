@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project - Chandira Irina</title>
+</head>
+
+<body>
+    <h1>Where to go next holiday?</h1>
+    <hr>
+
+    <form method="POST" action="http://127.0.0.1:5000/recommendation">
+        <label for="destination">Choose your favorite place :</label>
+
+            <select name="destination" id="destination" onkeyup="filterFunction()">
+                {% for drop in drop_places %}  
+                    <option value={{drop}}>{{drop}}</option>
+                {% endfor %}
+            </select>
+
+        <br>
+        <p>What type of activities do you like? </p>
+
+        {% for i in list_activity %}
+            <input type="checkbox" id={{i}} name={{i}} value={{i}}>
+            <input type="hidden" id="{{i}}" name={{i}} value="">
+            <label for={{i}}> {{i}} </label><br>
+        {% endfor %}    
+        
+        <!-- <input type="checkbox" id="type1" name="type1" value="acara">
+        <input type="hidden" id="type1hidden" name="type1" value=""> -->
+        <!-- <input id='testNameHidden' type='hidden' value='No' name='testName'> -->
+        <!-- <label for="type1"> I enjoy attending events</label><br>
+        <input type="checkbox" id="type2" name="type2" value="aktivitasluarruangan">
+        <label for="type2"> I like outdoor activities</label><br>
+        <input type="checkbox" id="type3" name="type3" value="bagussaathujan">
+        <label for="type3"> I will go on rainy season </label><br> -->
+        
+        <br>
+        <input type="submit" value="Recommend Me a Place!" />
+    </form>
+
+    
+    
+</body>
+
+</html>

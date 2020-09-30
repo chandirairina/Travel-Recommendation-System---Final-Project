@@ -1,0 +1,264 @@
+<!doctype html>
+<html class="no-js"  lang="en">
+
+	<head>
+		<!-- META DATA -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet" />
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+
+		<!-- TITLE OF SITE -->
+		<title>Travel</title>
+
+		<!-- favicon img -->
+		<link rel="shortcut icon" type="image/icon" href="{{ url_for('static', filename='logo/favicon.png') }}"/>
+
+		<!--font-awesome.min.css-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" />
+		<!-- <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/bootstrap.css') }}"> -->
+
+		<!--animate.css-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" />
+
+		<!--hover.css-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/hover-min.css') }}">
+
+		<!--owl.carousel.css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}"/>
+
+		<!-- range css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}" />
+
+		<!--bootstrap.min.css-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootsnav.css') }}"/>
+
+		<!--style.css-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+		<!--responsive.css-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+        <!--galley start-->
+		<section id="gallery" class="gallery">
+			<div class="container">
+				<div class="gallery-details">
+					<div class="gallary-header text-center">
+						<h2>
+							Here are some recommendations for you!
+						</h2>
+						<p>
+							"Once a year, go to a place you have never been before :)"  
+						</p>
+					</div>
+					<!--/.gallery-header-->
+					<div class="gallery-box">
+						<div class="gallery-content">
+						  	<div class="filtr-container">
+						  		<div class="row">
+						  			<div class="col-md-6">
+						  				<div class="filtr-item">	
+											<img src="https://img.freepik.com/free-vector/pastel-oil-painting-canvas-background_53876-93729.jpg?size=626&ext=jpg" alt="portfolio image"/>
+											<div class="item-title">
+												<a href="#">
+                                                    {{ output_destination[0] }}    
+												</a>
+												<p>Hotel starts from <a href = {{output_link_hotel[0]}}>{{output_hotel[0]}}</a></p>
+												<p>Flight starts from <a href = {{output_link_flight[0]}}>{{output_flight[0]}}</a></p>
+												<p><span>
+                                                    {% for i in output_spot[0] %}
+														{{i}}
+														<br>
+                                                    {% endfor %}
+                                                </span></p>
+											</div><!-- /.item-title -->
+										</div><!-- /.filtr-item -->
+						  			</div><!-- /.col -->
+
+						  			<div class="col-md-6">
+						  				<div class="filtr-item">
+											<img src="https://img.freepik.com/free-vector/pastel-oil-painting-canvas-background_53876-93729.jpg?size=626&ext=jpg" alt="portfolio image"/>
+											<div class="item-title">
+												<a href="#">
+                                                    {{ output_destination[1] }}    
+												</a>
+												<p>Hotel starts from <a href = {{output_link_hotel[1]}}>{{output_hotel[1]}}</a></p>
+												<p>Flight starts from <a href = {{output_link_flight[1]}}>{{output_flight[1]}}</a></p>
+												<p><span>
+                                                    {% for i in output_spot[1] %}
+														{{i}}
+														<br>
+                                                    {% endfor %}
+                                                </span></p>
+											</div> <!-- /.item-title-->
+										</div><!-- /.filtr-item -->
+						  			</div><!-- /.col -->
+
+						  			<div class="col-md-4">
+						  				<div class="filtr-item">
+											<img src="https://img.freepik.com/free-vector/pastel-oil-painting-canvas-background_53876-93729.jpg?size=626&ext=jpg" alt="portfolio image"/>
+											<div class="item-title">
+												<a href="#">
+                                                    {{ output_destination[2] }}    
+												</a>
+												<p>Hotel starts from <a href = {{output_link_hotel[2]}}>{{output_hotel[2]}}</a></p>
+												<p>Flight starts from <a href = {{output_link_flight[2]}}>{{output_flight[2]}}</a></p>
+												<p><span>
+                                                    {% for i in output_spot[0] %}
+														{{i}}
+														<br>
+                                                    {% endfor %}
+                                                </span></p>
+											</div><!-- /.item-title -->
+										</div><!-- /.filtr-item -->
+						  			</div><!-- /.col -->
+
+						  			<div class="col-md-4">
+						  				<div class="filtr-item">
+											<img src="https://img.freepik.com/free-vector/pastel-oil-painting-canvas-background_53876-93729.jpg?size=626&ext=jpg" alt="portfolio image"/>
+											<div class="item-title">
+												<a href="#">
+                                                    {{ output_destination[3] }}    
+												</a>
+												<p>Hotel starts from <a href = {{output_link_hotel[3]}}>{{output_hotel[3]}}</a></p>
+												<p>Flight starts from <a href = {{output_link_flight[3]}}>{{output_flight[3]}}</a></p>
+												<p><span>
+                                                    {% for i in output_spot[3] %}
+														{{i}}
+														<br>
+                                                    {% endfor %}
+                                                </span></p>
+											</div> <!-- /.item-title-->
+										</div><!-- /.filtr-item -->
+						  			</div><!-- /.col -->
+
+						  			<div class="col-md-4">
+						  				<div class="filtr-item">
+											<img src="https://img.freepik.com/free-vector/pastel-oil-painting-canvas-background_53876-93729.jpg?size=626&ext=jpg" alt="portfolio image"/>
+											<div class="item-title">
+												<a href="#">
+                                                    {{ output_destination[4] }}    
+												</a>
+												<p>Hotel starts from <a href = {{output_link_hotel[4]}}>{{output_hotel[4]}}</a></p>
+												<p>Flight starts from <a href = {{output_link_flight[4]}}>{{output_flight[4]}}</a></p>
+												<p><span>
+                                                    {% for i in output_spot[4] %}
+														{{i}}
+														<br>
+                                                    {% endfor %}
+                                                </span></p>
+											</div> <!-- /.item-title-->
+										</div><!-- /.filtr-item -->
+						  			</div><!-- /.col -->
+
+						  			<div class="col-md-8">
+						  				<div class="filtr-item">
+											<img src="https://img.freepik.com/free-vector/pastel-oil-painting-canvas-background_53876-93729.jpg?size=626&ext=jpg" alt="portfolio image"/>
+											<div class="item-title">
+												<a href="#">
+                                                    {{ output_destination[5] }}    
+												</a>
+												<p>Hotel starts from <a href = {{output_link_hotel[5]}}>{{output_hotel[5]}}</a></p>
+												<p>Flight starts from <a href = {{output_link_flight[5]}}>{{output_flight[5]}}</a></p>
+												<p><span>
+                                                    {% for i in output_spot[5] %}
+														{{i}}
+														<br>
+                                                    {% endfor %}
+                                                </span></p>
+											</div> <!-- /.item-title-->
+										</div><!-- /.filtr-item -->
+						  			</div><!-- /.col -->
+
+						  		</div><!-- /.row -->
+
+						  	</div><!-- /.filtr-container-->
+						</div><!-- /.gallery-content -->
+					</div><!--/.galley-box-->
+				</div><!--/.gallery-details-->
+			</div><!--/.container-->
+
+		</section><!--/.gallery-->
+		<!--gallery end-->
+
+				</div><!--/.footer-content-->
+				<hr>
+				<div class="foot-icons ">
+					<ul class="footer-social-links list-inline list-unstyled">
+		                <li><a href="#" target="_blank" class="foot-icon-bg-1"><i class="fa fa-facebook"></i></a></li>
+		                <li><a href="#" target="_blank" class="foot-icon-bg-2"><i class="fa fa-twitter"></i></a></li>
+		                <li><a href="#" target="_blank" class="foot-icon-bg-3"><i class="fa fa-instagram"></i></a></li>
+		        	</ul>
+		        	<p>&copy; 2017 <a href="https://www.themesine.com">ThemeSINE</a>. All Right Reserved</p>
+
+		        </div><!--/.foot-icons-->
+				<div id="scroll-Top">
+					<i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div><!--/.scroll-Top-->
+			</div><!-- /.container-->
+
+		</footer><!-- /.footer-copyright-->
+		<!-- footer-copyright end -->
+
+
+
+
+		<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+		<!--modernizr.min.js-->
+		<script  src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+		<!--bootstrap.min.js-->
+		<script  src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+		<!-- bootsnav js -->
+		<script src="{{ url_for('static', filename='js/bootsnav.js') }}"></script>
+
+		<!-- jquery.filterizr.min.js -->
+		<script src="{{ url_for('static', filename='js/jquery.filterizr.min.js') }}"></script>
+
+		<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+		<!--jquery-ui.min.js-->
+        <script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+
+        <!-- counter js -->
+		<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+
+		<!--owl.carousel.js-->
+        <script  src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+
+        <!-- jquery.sticky.js -->
+		<script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+
+		<!--Custom JS-->
+		<!-- <script src="assets/js/custom.js"></script> -->
+		<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+		<!-- <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/bootstrap.css') }}"> -->
+
+	</body>
+
+</html>
