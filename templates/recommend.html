@@ -124,7 +124,7 @@
 												<p>Hotel starts from <a href = {{output_link_hotel[2]}}>{{output_hotel[2]}}</a></p>
 												<p>Flight starts from <a href = {{output_link_flight[2]}}>{{output_flight[2]}}</a></p>
 												<p><span>
-                                                    {% for i in output_spot[0] %}
+                                                    {% for i in output_spot[2] %}
 														{{i}}
 														<br>
                                                     {% endfor %}
@@ -185,7 +185,8 @@
 														{{i}}
 														<br>
                                                     {% endfor %}
-                                                </span></p>
+												</span></p>
+												
 											</div> <!-- /.item-title-->
 										</div><!-- /.filtr-item -->
 						  			</div><!-- /.col -->
@@ -197,7 +198,7 @@
 					</div><!--/.galley-box-->
 				</div><!--/.gallery-details-->
 			</div><!--/.container-->
-
+			<img src="{{ url_for('static', filename='images/budget_destination.png') }}"/>
 		</section><!--/.gallery-->
 		<!--gallery end -->
 
