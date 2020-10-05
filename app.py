@@ -66,40 +66,13 @@ app = Flask(__name__)
 def home():
     df=pd.read_csv("dataset_recsys1_engineered.csv")
     list_places=df["Travel Destination"].unique()
-    list_places.sort()
-    cv = CountVectorizer()
-    cv_result = cv.fit_transform(df['Things to Do'])
-    list_activity=cv.get_feature_names()
+    list_places.sort() 
+    return render_template('home.html', drop_places=list_places, list_activity1=list_activity1, list_options1=list_options1, list_activity2=list_activity2, list_options2=list_options2)
 
-    # list_option=['I would like to attend special events in my next destination.',
-    # 'I enjoy outdoor activities.',
-    # 'I will go on rainy season.',
-    # 'I am adventurous.',
-    # 'I will travel with my kids.',
-    # 'I will travel in group.',
-    # 'I will travel with my partner.',
-    # 'I love extreme activities.',
-    # 'My budget is limited.',
-    # 'I like playing games.',
-    # 'I enjoy nightlife.',
-    # 'I like casinos.',
-    # 'I would like to visit local aquariums and/or zoos.',
-    # 'I would like to attend concerts.',
-    # 'I would like to join workshops.',
-    # 'I am going on honeymoon.',
-    # 'I like culinary.',
-    # 'I like freebies.',
-    # 'I like museums.',
-    # 'I like sightseeing within the city.',
-    # 'I enjoy spas.',
-    # 'I like water park and amusement park.',
-    # 'I enjoy shopping!',
-    # "I don't like crowded places",
-    # 'I enjoy nature.']
-    
+@app.route('/dataset')
+def data():
     df_summ=pd.read_csv("dataset_summary.csv").head(100)
-
-    return render_template('home.html', drop_places=list_places, list_activity1=list_activity1, list_options1=list_options1, list_activity2=list_activity2, list_options2=list_options2, data=df_summ, column_name=df_summ.columns.values,row_data=list(df_summ.values.tolist()))
+    return render_template("dataset.html", data=df_summ, column_name=df_summ.columns.values,row_data=list(df_summ.values.tolist()))
 
 @app.route('/recommendation', methods=['POST'])
 def hasil():

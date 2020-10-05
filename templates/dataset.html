@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head></head>
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    {% for i in data.columns %}
+                        <th>{{i}}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+                <tbody>
+                    {% for row in row_data %}
+                    <tr>
+                        {% for info in row %}
+                        <td>{{info}}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+        </table>
+    </body>
+</html>

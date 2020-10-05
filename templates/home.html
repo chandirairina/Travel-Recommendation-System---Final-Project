@@ -176,7 +176,6 @@
 										<br>
 										<p> Who are you going with for your next holiday? (you may choose more than 1 option!)</p>
 										{% for i in list_activity1 %}
-					
 											<input type="checkbox" id={{i}} name={{i}} value="{{i}}">
 											<input type="hidden" id="{{i}}" name={{i}} value="">
 											<label for="{{i}}"> {{list_options1[loop.index-1]}} </label><br>
@@ -184,7 +183,6 @@
 										<br>
 										<p>What kind of traveler are you? (you may choose more than 1 option!)</p>
 										{% for i in list_activity2 %}
-							
 											<input type="checkbox" id={{i}} name={{i}} value="{{i}}">
 											<input type="hidden" id="{{i}}" name={{i}} value="">
 											<label for="{{i}}"> {{list_options2[loop.index-1]}} </label><br>
@@ -192,6 +190,7 @@
 										<br>
 									<br>
 									<input type="submit" value="Recommend Me a Place!" />
+										</form>
 								</div><!--/.tab content-->
 							</div><!--/.desc-tabs-->
         				</div><!--/.single-travel-box-->
@@ -215,6 +214,9 @@
 									<!-- {{data | safe}} -->
 									<img src="{{ url_for('static', filename='images/budget.png') }}"/>
 									<br>
+									<form action="http://127.0.0.1:5000/dataset">
+										<input type="submit" value="	Click to view the complete dataset!	" />
+									</form>
 								</div><!--/.single-special-offer-txt-->
 							</div><!--/.single-special-offer-->
 						</div><!--/.col-->
@@ -227,47 +229,17 @@
 									<!-- <h3>special offer</h3> -->
 									<h4><span>POPULARITY </span><br> of some destinations are MUCH HIGHER compared to most destinations in Indonesia.</h4>
 									<p><span>BALI</span><br>is the top destination <br> with higher travel budget needed <br> compared to other top 10 destinations. </p>
-									<!-- <h4><span>BALI </span><br> is the top destination with higher budget compared to other top destinations.</h4>
-									<p><span>POPULARITY</span><br>of some destinations in Indonesia <br> are MUGH HIGHER <br> compared to other destinations </p> -->
+									
 								</div><!--/.single-special-shape-txt-->
 							</div><!--/.single-special-offer-->
 						</div><!--/.col-->
 					</div><!--/.row-->
 				</div><!--/.special-offer-content-->
 			</div><!--/.container-->
-
 		</section><!--/.special-offer end-->
 		<!--special-offer end-->
-		<div style="overflow-x: scroll;">
-		Dataset yang digunakan
-		<br>
-		<table border="1">
-		<thead>
-			<tr>
-				{% for i in data.columns %}
-					<th>{{i}}</th>
-				{% endfor %}
-			</tr>
-		</thead>
-			<tbody>
-				{% for row in row_data %}
-				<tr>
-					{% for info in row %}
-					<td>{{info}}</td>
-					{% endfor %}
-				</tr>
-				{% endfor %}
-			</tbody>
-		</table>
-		</div>
 				<hr>
-				<div class="foot-icons ">
-					<ul class="footer-social-links list-inline list-unstyled">
-		                <li><a href="#" target="_blank" class="foot-icon-bg-1"><i class="fa fa-facebook"></i></a></li>
-		                <li><a href="#" target="_blank" class="foot-icon-bg-2"><i class="fa fa-twitter"></i></a></li>
-		                <li><a href="#" target="_blank" class="foot-icon-bg-3"><i class="fa fa-instagram"></i></a></li>
-		        	</ul>
-		        	<p>&copy; 2017 <a href="https://www.themesine.com">ThemeSINE</a>. All Right Reserved</p>
+					<p>&copy; 2017 <a href="https://www.themesine.com">ThemeSINE</a>. All Right Reserved</p>
 
 		        </div><!--/.foot-icons-->
 				<div id="scroll-Top">
