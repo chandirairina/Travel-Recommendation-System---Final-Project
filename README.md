@@ -18,5 +18,7 @@ This project was made as a final project in my Data Science course in Purwadhika
   In reality, if using cosine similarity seems to not have good enough result, we can try using other methods (such as Jaccard similarity or Spearman correlations, or others).
 
 In the recommender system, the user is requested to input their preferences as shown below.
-<img src="user_input.jpg"> In the example, the user is planning to go with his/her friends, and s/he likes outdoor activities, nature, is adventurous, an adrenaline junkies, and likes to attend special events. We will see how this recommender system works and what the recommended place would be.
-<img src="recom.jpg"> The recommendation system resulted 6 top recommended places to go, which are some places in Bali (Karangasem, Legian, Blahbatuh, and Mengwi), Flores, and also Tuban (East Java). It also shows some recommended spots of each places, the approximate hotel and flight price from Jakarta. 
+<img src="user_input.jpg"> 
+<br>In the example, the user is planning to go with his/her friends, and s/he likes outdoor activities, nature, is adventurous, an adrenaline junkies, and likes to attend special events. We will see how this recommender system works and what the recommended place would be.
+<img src="recom.jpg"> 
+<br> The recommendation system resulted 6 top recommended places to go, which are some places in Bali (Karangasem, Legian, Blahbatuh, and Mengwi), Flores, and also Tuban (East Java). It also shows some recommended spots of each places, the approximate hotel and flight price from Jakarta. 
