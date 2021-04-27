@@ -23,4 +23,4 @@ In the recommender system, the user is requested to input their preferences as s
 <img src="recom.jpg"> 
 <br> The recommendation system resulted 6 top recommended places to go, which are some places in Bali (Karangasem, Legian, Blahbatuh, and Mengwi), Flores, and also Tuban (East Java). It also shows some recommended spots of each places, the approximate hotel and flight price from Jakarta. 
 
-<br><br> css template from: https://www.free-css.com/free-css-templates/page256/tournest
+<br><br> css template from: https://www.free-css.com/free-css-templates/page256/tournest (with some modification)
