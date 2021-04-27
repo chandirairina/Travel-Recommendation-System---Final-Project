@@ -1,4 +1,5 @@
 # Final-Project : Recommender Sytem for Travel Destination Idea
+<img src="F:\Github Repo Images\Travel Recom\home.jpg">
 This project was made as a final project in my Data Science course in Purwadhika.
 
 1. Background: <br>
