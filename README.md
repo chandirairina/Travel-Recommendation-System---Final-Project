@@ -1,5 +1,5 @@
 # Final-Project : Recommender Sytem for Travel Destination Idea
-<img src="home.jpg">
+<img src="home.jpg" width=700 height=432>
 This project was made as a final project in my Data Science course in Purwadhika.
 
 1. Background: <br>
