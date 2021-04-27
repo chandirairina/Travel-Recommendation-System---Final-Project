@@ -1,7 +1,7 @@
 # Final-Project : Recommender Sytem for Travel Destination Idea
 This project was made as a final project in my Data Science course in Purwadhika.
 
-1. Background:
+1. Background: <br>
   The project was initially inspired by my own wish to have such recommendation system to find a place which is suitable with my preferences. I want to make sure that my next destination offers activities that I enjoy on my previous holiday, for example. 
   I found that there are 2 out of 3 millenials are also interested in such service, according to SiteMinder (source: https://www.siteminder.com/r/trends-advice/hotel-travel-industry-trends/millennials-travel-20-interesting-stats-millennial-hotel-guests/), beside the budget consideration.
   Since millenials are important target market to travel industry, that 82% millenials travelled last year compared to 75% of all other generations according to Condor Ferries's statistics (https://www.condorferries.co.uk/millennials-travel-statistics-trends), I consider that this service could be a huge help to companies in travel industry, or could also be useful for government to improve the tourism industry.
